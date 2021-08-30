@@ -89,8 +89,7 @@ def input_setup(index):
 
 num_epoch=3
 while(num_epoch==3):
-
-    reader = tf.train.NewCheckpointReader("./checkpoint/CGAN_120/CGAN.model-9")
+    reader = tf.compat.v1.train.NewCheckpointReader("./checkpoint/CGAN_120/CGAN.model-9")
     # reader = tf.train.NewCheckpointReader('./checkpoint/CGAN_120/CGAN.model-'+ str(num_epoch))
 
     with tf.name_scope('IR_input'):
