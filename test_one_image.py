@@ -7,7 +7,7 @@ import os
 import glob
 import cv2
 
-#reader = tf.train.NewCheckpointReader("./checkpoint/CGAN_120/CGAN.model-9")
+reader = tf.train.NewCheckpointReader("./checkpoint/CGAN_120/CGAN.model-9")
 
 
 def imread(path, is_grayscale=True):
